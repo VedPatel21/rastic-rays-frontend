@@ -1,0 +1,90 @@
+.about-page {
+  margin-top: 60px;
+  background: #1b1b1b;
+  color: #f5f5f5;
+  padding-bottom: 60px;
+}
+
+/* Hero image for About page */
+.about-hero {
+  background: url('https://via.placeholder.com/1920x500?text=About+Rustic+Rays') center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-hero h1 {
+  color: #f5f5f5;
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* About content section */
+.about-content {
+  max-width: 900px;
+  margin: 40px auto 0;
+  font-family: 'Lora', serif;
+  font-size: 1.1em;
+  line-height: 1.7;
+  text-align: center;
+  padding: 0 20px;
+  color: #f5f5f5;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+/* Highlights section */
+.about-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.highlight {
+  flex: 1 1 280px;
+  max-width: 320px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  background: #2a2a2a;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.highlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.highlight h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #d4af37;
+  text-transform: uppercase;
+}
+
+.highlight p {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  color: #f5f5f5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-highlights {
+    flex-direction: column;
+    align-items: center;
+  }
+}
